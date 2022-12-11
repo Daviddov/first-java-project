@@ -198,28 +198,34 @@ public static void main(String[] args) {
 //	String result2 = percent.format(0.6);
 //	System.out.println(result2);
 	
-//	
-//	final byte MOUNTS_IN_YEAR = 12, PERCENT = 100;
-//	int principal, period;
-//	float annual;
-//	double mortgage;
-//	System.out.print("Principal:");
-//	Scanner in = new Scanner(System.in);
-//	principal = in.nextInt();
-//	System.out.print("Annual Interest Rate:");
-//	annual = in.nextFloat();
-//	float mounthlyInterest = annual / PERCENT / MOUNTS_IN_YEAR;
-//	System.out.print("Period (Years):");
-//	float years = in.nextInt();
-//	float numberOfPayment = years * MOUNTS_IN_YEAR;
-//	mortgage = (principal * mounthlyInterest * 
-//			Math.pow(1 + mounthlyInterest, numberOfPayment)/
-//			Math.pow(1 + mounthlyInterest, numberOfPayment));
-//	
-//	NumberFormat currency = NumberFormat.getCurrencyInstance();
-//	String result = currency.format(mortgage);
-//	
-//		System.out.print("Mortgage: " + result);
+	
+	final byte MOUNTS_IN_YEAR = 12, PERCENT = 100;
+	int principal, period;
+	float annual;
+	double mortgage;
+	
+	Scanner in = new Scanner(System.in);
+	while(true) {
+		System.out.println("Principal:");
+		principal = in.nextInt();
+		if (principal >= 1000 && principal <= 1000000)
+			break;
+		System.out.println("Insert number between 1,000 to 1,000,000");
+	}
+	System.out.print("Annual Interest Rate:");
+	annual = in.nextFloat();
+	float mounthlyInterest = annual / PERCENT / MOUNTS_IN_YEAR;
+	System.out.print("Period (Years):");
+	float years = in.nextInt();
+	float numberOfPayment = years * MOUNTS_IN_YEAR;
+	mortgage = (principal * mounthlyInterest * 
+			Math.pow(1 + mounthlyInterest, numberOfPayment)/
+			Math.pow(1 + mounthlyInterest, numberOfPayment));
+	
+	NumberFormat currency = NumberFormat.getCurrencyInstance();
+	String result = currency.format(mortgage);
+	
+		System.out.print("Mortgage: " + result);
 }
 	
 	
