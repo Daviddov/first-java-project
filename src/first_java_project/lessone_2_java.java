@@ -1,14 +1,6 @@
 package first_java_project;
 
 import java.util.Random;
-import java.util.Scanner;
-
-import unit4.bucketLib.Bucket;
-import unit4.turtleLib.Turtle;
-
-
-
-
 
 public class lessone_2_java {
 public static void main(String[] args) {
@@ -66,85 +58,37 @@ public static void main(String[] args) {
 //	System.out.println(slant);
 //	System.out.println(surface);
 //	System.out.println('a'-30);
+//	System.out.println('a'==97);
 	
-//	4.2.1
-//	int   = 156, bag = 20, sumOfBags = maerbles / bag, sperte = maerbles % bag;
-//	System.out.println("maerbles :" + maerbles +  "\n sumOfBags :" + sumOfBags + " sperte:" + sperte);
+//	int num = 14;
+//	for ( int i = 0; i < num ; i++) {
+//		
+//		for ( int k = 0 ; k < i ; k++) {
+//			System.out.print(' ');
+//		}
+//		for ( int j = i ; j < num ; j++) {
+//			System.out.print("*"+' ');
+//		}
+//		  System.out.println("");
+//	}
+//	for ( int i = 0; i < num ; i++) {
+//		for ( int j = i ; j < num-1 ; j++) {
+//			System.out.print(' ');
+//		}
+//		for ( int j = 0 ; j <= i ; j++) {
+//			System.out.print("*"+" ");
+//		}
+//		  System.out.println("");
+//	}
+//	int sec = 36461, minute = 60 , houre = 60* 60;
+//	System.out.println(sec+ " secound is "+ sec / houre + ":"+ sec % houre / minute +":"+ sec % minute );
+//	double n1 = 12.34, n2 = 56, n3 = 7, n4 = 8, fn, result;
+//	fn = n2+((n3 * 10 + n4)/100);
+//	result = fn * n1;
+//	System.out.println(result);
+//	System.out.println((float)(97 + 32 + 55)/ 3 );
 	
-//	4.13
-//	int pages  = 55, timeForPage = 10, hour= 60, 
-//			minutes = pages * timeForPage % hour , 
-//			hours = pages * timeForPage / hour;
-//	float salaryPerPage = 6.3F, totalSalary = salaryPerPage * pages;
-//	System.out.println(pages + " pages take "+ hours +"  hours" + " and "+ minutes  + " minutes" + "\n");
-//	System.out.println("Tha total Salary is:"+ totalSalary);
-//	4.14
-//	char input= 'a', bigA ='a'-('a'-'A'), smallA ='A'+ ('a'-'A') ;
-////	System.out.println((char)bigA);
-//	System.out.println("enter a char");
-//	Scanner in = new Scanner(System.in);
-//	input = in.next().charAt(0);
-//	input -= ('a'-'A');
-//	char nextChar = (char) (input + 1);
-//	System.out.println(input);
-//	System.out.println(nextChar);
 	
-//	4.23
-//	System.out.println("enter a char");
-//	Scanner in = new Scanner(System.in);
-//	char input = in.next().charAt(0);
-//	char multyplyByTen = (char) (input * 10), multyplyByFiveTeen = (char) (input * 15);
-//	System.out.print("input: "+ input +" multyplyByTen: "+multyplyByTen + " multyplyByFiveTeen:"+multyplyByFiveTeen);
-////	
-//	4.24
-//	System.out.println("enter 2 chars");
-//	Scanner in = new Scanner(System.in);
-//	char num1 = (char) (in.next().charAt(0) - '0');
-//	char num2 = (char) (in.next().charAt(0) -'0');
-//	System.out.println(num1 + num2);
-	
-//	Random rnd = new Random();
-//	System.out.println(rnd.nextInt(6)+1);
-//	System.out.println(rnd.nextInt(6)+1);
-	
-//Turtle t = new Turtle();
-//t.moveForward(100);
-//t.tailDown();
-//t.moveForward(100);
-//t.turnRight(75);
-//t.moveForward(100);
-//t.turnRight(75);
-//t.moveForward(100);
-//t.turnRight(75);
-//t.moveForward(100);
-//t.tailUp();
-//t.moveForward(100);
-	
-//Bucket b = new Bucket(100, "buck");
-//b.fill(50);
-//Bucket bb = new Bucket(100, "buck");
-//bb.fill(50);
-//b.pourInto(bb);
-//Bucket bbb = new Bucket(100, "buck");
-//bbb.fill(50);
-//bb.pourInto(bbb);
-//	4.1
-//	float a = 5, b = 7, c = 5, x1, x2;
-//	float aX2 = 2 * a;
-//	float powB = (float) Math.pow(b, 2)	;
-//	float acX4 = -4 * a * c;
-//	x1 = (float) ((- b + Math.sqrt(powB - acX4)) / aX2);
-//	x2 = (float) ((- b - Math.sqrt(powB - acX4)) / aX2);
-//	System.out.print(x1 + " "+ x2);
-	
-	int num1 =6, num2 =3, a, b, c, d, e;
-	a= num1 / 2;
-	b= num1 % 2;
-	c= num2 /10;
-	d= num2 %10;
-	e= num1 /num2;
-	d= num1% num2;
-	System.out.print(a + " "+ b);
-	                                                                                                                                                                                                      
 }
+
 }
